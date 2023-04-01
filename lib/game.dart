@@ -110,7 +110,7 @@ class _Game extends State<Game> {
                                           MediaQuery.of(context).size.height *
                                               0.1,
                                       child: const Text(
-                                        "Gratulacje. Ujebales!",
+                                        "Gratulacje!",
                                         textAlign: TextAlign.center,
                                       ),
                                     ),

@@ -124,6 +124,7 @@ String drawMap() {
   return map;
 }
 
+/// Checks if field exists.
 bool isSafe(i, j) {
   if (i >= 0 && i < globals.matrixSize && j >= 0 && j < globals.matrixSize) {
     return true;
@@ -131,6 +132,7 @@ bool isSafe(i, j) {
   return false;
 }
 
+/// Checks if map is correct.
 bool checkPath(i, j, visited) {
   if (isSafe(i, j) && !globals.gameObjects[i][j].outOfGame && !visited[i][j]) {
     visited[i][j] = true;
@@ -156,6 +158,7 @@ bool checkPath(i, j, visited) {
   return false;
 }
 
+/// Checks if exist path between start and end fiedl.
 bool isPath() {
   if (globals.gameObjects.isEmpty) {
     return false;
